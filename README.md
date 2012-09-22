@@ -1,4 +1,4 @@
 phx-pagination
 ==============
 
-Pagination plugin for ExpressJS framework
+Pagination plugin for Expressjs
