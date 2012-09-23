@@ -38,8 +38,6 @@ app.get('/', function (req, res) {
 
 ```html
 
-`Display <- preview / pages / next -> in the view`
-
 <div id="main">
 	<% countries.forEach(function (country) { %>
 	  <div class="span-two-thirds">
@@ -55,12 +53,6 @@ app.get('/', function (req, res) {
 
 /* EOF */
 
-```
-
-## Run Tests
-
-``` bash
-$ npm test
 ```
 
 ## Author: [Physalix][0]
