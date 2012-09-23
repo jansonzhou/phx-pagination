@@ -23,12 +23,12 @@ require('phx-pagination').init(app);
 app.get('/', function (req, res) {
    var page = req.param('page') || 1;
    Country.paginate({limit: 15, page: page}, function (error, countries) {
-		if (error) {
-			console.error(error);
-  	} else {
- 			res.render('countries/index', { title: 'Country List', countries: countries });		
-		}
-	});
+     if (error) {
+        console.error(error);
+     } else {
+        res.render('countries/index', { title: 'Country List', countries: countries });		
+     }
+   });
 });
 
 ```
@@ -36,16 +36,16 @@ app.get('/', function (req, res) {
 ```html
 
 <div id="main">
-	<% countries.forEach(function (country) { %>
-	  <div class="span-two-thirds">
-	    country: <%= country.name %> 
-	  </div>
-	  <div class="span-one-third">
-			<a href="/show/<%= country.id %>">Show</a>
-			<a href="/delete/<%= country.id %>" onclick="return confirm('Are you sure you want to delete?')">Delete</a>
-	  </div>
-	<% }); %>
-	<%- paginate(countries) %>
+   <% countries.forEach(function (country) { %>
+      <div class="span-two-thirds">
+           country: <%= country.name %> 
+      </div>
+      <div class="span-one-third">
+	<a href="/show/<%= country.id %>">Show</a>
+	<a href="/delete/<%= country.id %>" onclick="return confirm('Are you sure you want to delete?')">Delete</a>
+      </div>
+    <% }); %>
+    <%- paginate(countries) %>
 </div>
 
 ```
