@@ -1,0 +1,29 @@
+{
+  "name": "phx-pagination",
+  "description": "ExpressJS + Mongoose ORM (ExpressJS/NodeJS/MongoDB) Document Query Pagination",	
+  "author": {
+    "name": "Physalix",
+    "email": "fs@physalix.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/physalix/phx-pagination.git"
+  },
+  "keywords": [
+    "paginate",
+    "pagination",
+    "mongoose",
+    "express"
+  ],
+  "version": "0.0.1",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.4.0"
+    ,"mongoose": ">= 2.4.9"
+  },
+  "license": "MIT",
+  "dependencies": {
+		"mongoose": ">= 2.4.9"
+  },
+  "devDependencies": {}
+}
