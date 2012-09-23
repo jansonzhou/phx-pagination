@@ -15,7 +15,6 @@ $ npm install phx-pagination
 /**
  * basic example usage of `phx-pagination`
  **/
-
 require('phx-pagination').init(app);
 
 /** 
@@ -31,8 +30,6 @@ app.get('/', function (req, res) {
 		}
 	});
 });
-
-/* EOF */
 
 ```
 
@@ -50,8 +47,6 @@ app.get('/', function (req, res) {
 	<% }); %>
 	<%- paginate(countries) %>
 </div>
-
-/* EOF */
 
 ```
 
