@@ -8,12 +8,9 @@ var mongoose = require('mongoose');
  * @param {app} express app param
  **/
 exports.init = function (app) {
-	var helpers = {};
-	helpers['paginate'] = function (req, res) {
-		return paginateHelper;
-	};
-	app.dynamicHelpers(helpers);	
+   app.locals.paginate = paginateHelper;
 };
+
 
 /**
  * @function paginateHelper
