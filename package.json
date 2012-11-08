@@ -15,7 +15,7 @@
     "mongoose",
     "express"
   ],
-  "version": "0.0.2",
+  "version": "0.1.0",
   "main": "index.js",
   "engines": {
     "node": ">= 0.4.0"
