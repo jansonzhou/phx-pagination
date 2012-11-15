@@ -23,8 +23,6 @@
     ,"express3": ">= 3.x"
   },
   "license": "MIT",
-  "dependencies": {
-		"mongoose": ">= 2.4.9"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
